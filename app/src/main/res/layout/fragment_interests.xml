@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.trysurfer.surfer.user.InterestsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose interests"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/alternative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alternative2"
+        android:layout_alignRight="@+id/alternative2"
+        android:layout_marginRight="100dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alternative2"
+        android:layout_alignLeft="@+id/alternative2"
+        android:layout_marginLeft="100dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alternative5"
+        android:layout_alignLeft="@+id/alternative1"
+        android:layout_alignStart="@+id/alternative1"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alternative6"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alternative3"
+        android:layout_alignLeft="@+id/alternative3"
+        android:layout_alignStart="@+id/alternative3"
+        android:layout_marginTop="66dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/alternative4"
+        android:layout_alignStart="@+id/alternative4"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/alternative9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/alternative6"
+        android:layout_alignStart="@+id/alternative6"
+        android:textColor="@android:color/white"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:id="@+id/button_finish"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="app_name">Surfer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_screenlock">ScreenLockActivity</string>
+    <string name="welcome">Innlogget</string>
+    <string name="get_started">To get started, log in using Facebook</string>
+    <string name="settings">Settings</string>
+    <string name="app_id">1417226155194902</string>
+
+    <!-- <string name="base_url">http://10.0.2.2:3000/</string> -->
+    <string name="base_url">https://surfer.herokuapp.com/</string>
+    <string name="user_uri">greeting</string>
+    <string name="commercial_uri">get_commercials</string>
+    <string name="commercial_tracker_uri">track_commercial</string>
+
+    <!--
+    <string name="user_url">http://10.0.2.2:8080/surferServer-web/com.olsen.surfer.model.users</string>
+    <string name="commercial_url">http://10.0.2.2:8080/surferServer-web/com.olsen.surfer.model.commercials</string>
+    -->
+    <!-- <string name="user_url">http://10.0.2.2:8080/surferServer-web/com</string> -->
+
+
+    <!-- <string name="user_url">http://10.0.2.2:8080/users</string> -->
+    <!--
+    <string name="chat_url">ws://10.0.2.2:8080/javaee-mobile-server/chat</string>
+    <string name="todo_url">http://192.168.2.3:8080/javaee-mobile-server/resources/todo</string>
+    <string name="chat_url">ws://192.168.2.3:8080/javaee-mobile-server/chat</string
+    -->
+
+    <string name="btn_toggle_multiplier">Toggle GlowPad mult</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8621659814260319/1327794987</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_interests">InterestsActivity</string>
+    <string name="title_activity_withdraw">WithdrawActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+
+    <string name="title_template_step">Step <xliff:g id="step_number">%1$d</xliff:g>: Lorem
+        Ipsum</string>
+
+    <string name="action_next">Next</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_finish">Finish</string>
+
+    <string name="card_back_description"><![CDATA[Lorem ipsum dolor sit]]></string>
+    <string name="lorem_ipsum"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna ut erat elementum cursus in quis ipsum. Nam faucibus ultrices eros, vel tempor leo semper sit amet. Duis magna quam, congue vitae interdum nec, condimentum ut lectus. Sed commodo venenatis eros a dignissim. Nunc adipiscing turpis nec magna venenatis at ultricies ipsum bibendum. Sed volutpat urna quis nisi vulputate egestas. Etiam eu dui a enim lacinia dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\nPhasellus orci mi, eleifend nec congue id, volutpat at neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer semper velit vel leo rutrum sed fermentum elit porta.]]></string>
+
+
+</resources>

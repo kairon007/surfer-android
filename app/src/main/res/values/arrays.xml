@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Call Activity ring targets
+         - Answer (drag right)
+         - Reject (drag left)
+     -->
+    <array name="incoming_call_widget_2way_targets">
+        <item>@drawable/ic_lockscreen_unlock</item>
+        <item>@null</item>
+        <item>@drawable/ic_lockscreen_open</item>
+        <item>@null</item>"
+    </array>
+
+    <array name="interests_array">
+        <item>Sports</item>
+        <item>Music</item>
+        <item>IT</item>
+        <item>Food</item>
+        <item>Travel</item>
+        <item>Clothes</item>
+        <item>Finance</item>
+        <item>Health</item>
+        <item>Social</item>
+    </array>
+</resources>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screenlock.AdMobLockScreen"
+    tools:ignore="MergeRootFrame"
+    android:background="@android:color/transparent">
+    <!--
+    <fragment
+        android:name="com.trysurfer.surfer.activity_screenlock.AdMobLockScreencreen$PlaceholderFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adFragment"
+    />
+    -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="com.trysurfer.surfer.screenlock.AdMobLockScreen$AdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:text="Large Text"
+        android:id="@+id/test_time"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <net.frakbot.glowpadbackport.GlowPadView
+        android:id="@+id/glowpadtest"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-150dp"
+        android:visibility="visible"
+        android:gravity="center"
+
+        app:targetDrawables="@array/incoming_call_widget_2way_targets"
+        app:handleDrawable="@drawable/ic_in_call_touch_handle"
+        app:innerRadius="@dimen/glowpadview_inner_radius"
+        app:outerRadius="@dimen/glowpadview_target_placement_radius"
+        app:outerRingDrawable="@drawable/ic_lockscreen_outerring"
+        app:snapMargin="@dimen/glowpadview_snap_margin"
+        app:vibrationDuration="20"
+        app:feedbackCount="1"
+        app:glowRadius="@dimen/glowpadview_glow_radius"
+        app:pointDrawable="@drawable/ic_lockscreen_glowdot"
+    />
+
+    </FrameLayout>
+
+</RelativeLayout>

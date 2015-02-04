@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="com.trysurfer.surfer.user.InterestsActivity">
+
+    <TextView
+        android:text="Interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_interests_finish"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="Ferdig"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <fragment
+        android:name="com.trysurfer.surfer.user.InterestsActivity$InterestsFragment"
+        android:id="@+id/user_interests_fragment_in_interests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_interests_finish"
+        android:layout_alignParentLeft="true"
+        tools:layout="@layout/fragment_interests" />
+
+
+</RelativeLayout>

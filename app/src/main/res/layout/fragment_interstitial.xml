@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!-- ads:adUnitId="ca-app-pub-8621659814260319/1327794987" -->
+    <!-- ads:adUnitId="@string/banner_ad_unit_id"-->
+
+</RelativeLayout>

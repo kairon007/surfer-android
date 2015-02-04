@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 10
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "br.com.kots.mob.complex.preferences"
+        minSdkVersion 8
+        targetSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    //compile 'com.google.code.gson:gson:1.7.1'
+    compile project(':gson-2.2.2')
+}
