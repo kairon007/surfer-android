@@ -100,6 +100,8 @@ public class AdMobLockScreen extends ActionBarActivity {
         //initInterstitialAdMob();
         mContext = getApplicationContext();
 
+        initClock();
+
         glowPad = (GlowPadView) findViewById(R.id.glowpadtest);
         glowPad.setVibrateEnabled(false);
         glowPad.setShowTargetsOnIdle(true);
@@ -162,6 +164,21 @@ public class AdMobLockScreen extends ActionBarActivity {
 
     }
 
+    private void initClock() {
+        currentTime = (TextView) findViewById(R.id.test_time);
+
+        Thread myThread = null;
+
+        Runnable myRunnableThread = new CountDownRunner();
+        myThread= new Thread(myRunnableThread);
+        myThread.start();
+
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        //| View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+    }
+
     public void doWork() {
         runOnUiThread(new Runnable() {
             public void run() {
@@ -171,7 +188,9 @@ public class AdMobLockScreen extends ActionBarActivity {
                     int hours = dt.getHours();
                     int minutes = dt.getMinutes();
                     int seconds = dt.getSeconds();
-                    String curTime = hours + ":" + minutes + ":" + seconds;
+
+                    String curTime = hours + ":" + minutes;// + ":" + seconds;
+                    curTime = (minutes < 10) ? curTime += "0" : curTime;
                     currentTime.setText(curTime);
                     //Log.i(LOG_TAG, "Time: " + curTime);
                 }catch (Exception e) {}

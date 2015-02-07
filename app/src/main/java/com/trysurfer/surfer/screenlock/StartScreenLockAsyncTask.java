@@ -22,11 +22,11 @@ public class StartScreenLockAsyncTask extends AsyncTask<Void, Void, Void>{
 
         screenLockIntent = new Intent(mContext.getApplicationContext(),
                 //ScreenLockActivity.class
-                //AdMobLockScreen.class
+                AdMobLockScreen.class
                 //InterstitialAdMobLockScreen.class
                 //Adform.class
                 //AdBuddizActivity.class
-                MobFoxActivity.class
+                //MobFoxActivity.class
                 );
         screenLockIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT

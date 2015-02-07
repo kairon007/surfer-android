@@ -15,17 +15,17 @@
     </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="40dp"
-        android:textColor="@android:color/white"
-        android:text="Large Text"
-        android:id="@+id/test_time"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="40dp"
+    android:textColor="@android:color/white"
+    android:text="Large Text"
+    android:id="@+id/test_time"
+    android:layout_gravity="center_horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp" />
 
     <net.frakbot.glowpadbackport.GlowPadView
         android:id="@+id/glowpadtest"

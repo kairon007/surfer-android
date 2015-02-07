@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".screenlock.AdMobLockScreen"
     tools:ignore="MergeRootFrame"
-    android:background="@android:color/transparent">
+    android:background="@android:color/black">
+    <!-- "@android:color/transparent -->
+
     <!--
     <fragment
         android:name="com.trysurfer.surfer.activity_screenlock.AdMobLockScreencreen$PlaceholderFragment"
@@ -15,18 +17,21 @@
         android:layout_above="@+id/adFragment"
     />
     -->
+    <!--
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-
+        -->
     <fragment
         android:id="@+id/adFragment"
         android:name="com.trysurfer.surfer.screenlock.AdMobLockScreen$AdFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_gravity="center" />
 
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -62,6 +67,9 @@
         app:pointDrawable="@drawable/ic_lockscreen_glowdot"
     />
 
+
+    <!--
     </FrameLayout>
+    -->
 
 </RelativeLayout>
